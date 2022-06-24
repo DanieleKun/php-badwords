@@ -2,8 +2,8 @@
     $myText = "Se c'è una possibilità che varie cose vadano male, quella che causa il danno maggiore sarà la prima a farlo. Dietro ogni soluzione ci sarà sempre una catena di problematiche conseguenze.";
 
     $name = $_GET['name'];
-
     $textReplaced = str_ireplace($name, '***', $myText);
+
 
 
 ?>
@@ -25,8 +25,12 @@
 
     <h1>Testo originale:</h1>
     <p><?= $myText; ?></p>
+    <h2>Lunghezza stringa originale:</h2>
+    <p><?= (strlen($myText));?> </p>
 
     <h1>Testo censurato</h1>
     <p><?= $textReplaced; ?></p>
+    <h2>Lunghezza stringa censurata:</h2>
+    <p><?=(strlen($textReplaced)); ?> </p>
 </body>
 </html>
